@@ -7,35 +7,36 @@
     <link rel="stylesheet" href="/principal/principal.css" />
     <title>CSS Grid e Flexbox</title>
   </head>
-  
+ <body>
+
+<input type="checkbox" id="check">
+<!--header começo-->
  
 
-  
-<!--BARRA DE NAVEGAÇÃ---------------------------------------------->
-
-
-
-
-
-
-  <div>
-    <input type="checkbox" id="check">
-    <!--header começo-->
-    <header>
+<header>
+  <nav>
+    <div class="cabeca">
         <label for="check">
-            <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
+          <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
         </label>
+      
         <div class="left">
             <h3>CEP <span>Deyvid Pinto</span></h3>
         </div>
-        <div class="right">
+        <div>
             <a href="#" class="sair_btn">Sair</a>
         </div>
-    </header>
+    </div>
+  </nav>
+</header>
+
+
     <!--header final-->
 
    
     <!--sidebar começo-->
+
+
     <div class="sidebar">
         <center>
             <img src="/index/images/aluno.png" class="image" alt="">
@@ -45,55 +46,73 @@
         <a href="#"><ion-icon name="calendar-clear-outline"></ion-icon><span>Agenda de Provas</span></a>
         <a href="#"><ion-icon name="book-outline"></ion-icon><span>Atividades Extras</span></a>
         <a href="#"><ion-icon name="shield-checkmark-outline"></ion-icon><span>Matrícula</span></a>
-        <a href="#"><ion-icon name="settings-outline"></ion-icon><span>Configuração</span></a>
-        
-    </div>
-    <!--sidebar final-->
-    <div class="content"></div>
-    
-    <h1>Disciplinas</h1>
+        <a href="#"><ion-icon name="settings-outline"></ion-icon><span>Configuração</span></a> 
+      </div>
 
-    <section class="flex">
-      <div>
-        <div class="box">
-          <p>Matematica</p>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <p>Portugues</p>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <p>História</p>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <p>Geografia</p>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <p>Física</p>
-        </div>
-      </div>
-      <div>
-        <div class="box">
-          <p>Química</p>
-        </div>
-      </div>
-    </section>
-     
-    
-    
+
+   <!--sidebar final-->
+      <br>
+      <br>
+      <br>
+    <div class="main">
+      <section class="flex">
+        
+          <div class="box" id="mat">
+            <p>Matematica</p>
+          </div>
+                
+          <div class="box" id="port">
+            <p>Portugues</p>
+          </div>
+             
+          <div class="box">
+            <p>História</p>
+          </div>
+        
+          <div class="box">
+            <p>Geografia</p>
+          </div>
+        
+          <div class="box">
+            <p>Física</p>
+          </div>
+       
+          <div class="box">
+            <p>Química</p>
+          </div>
+
+          <div class="box">
+            <p>Educação Física</p>
+          </div>
+
+          <div class="box">
+            <p>Biologia</p>
+          </div>
+
+          <div class="box">
+            <p>Produção Textual</p>
+          </div>
+
+          <div class="box">
+            <p>Sociologia</p>
+          </div>
+
+          <div class="box">
+            <p>Filosofia</p>
+          </div>
+
+          <div class="box">
+            <p>Inglês</p>
+          </div>
+        
+      </section>
+    </div>   
+    </body> 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     
-  </div>
-    
+   
 
     
 </html>

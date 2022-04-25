@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
 *{
+    outline: 0; 
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -9,9 +10,17 @@ header{
     position: fixed;
     background: #1c1c1c;
     padding: 20px;
-    width: 100%;
+    width: 100vw;
     height: 30px;
+    justify-content: center;
 }
+
+#sidebar_btn{
+  position: fixed;
+}
+
+
+
 .left h3{
     color: #fff;
     margin: 0;
@@ -19,9 +28,13 @@ header{
     font-size: 22px;
     font-weight: 800;
 }
+
+
 .left span{
     color: #51b3ec;
 }
+
+
 .sair_btn{
     padding: 5px;
     padding-left: 15px;
@@ -38,14 +51,18 @@ header{
     transition: 0.5s;
     transition-property: background;
 }
+
+
 .sair_btn:hover{
     background: #1c1c1c;
     color: #fff;
 }
+
+
 .sidebar{
     position: fixed;
     width: 250px;
-    height: 100%;
+    height: 200%;
     margin-top: 70px;
     padding-top: 30px;
     left: 0;
@@ -53,16 +70,22 @@ header{
     transition: 0.5s;
     transition-property: left;
 }
+
+
 .sidebar .image{
     width: 100px;
     height: 100px;
     border-radius: 100px;
 }
+
+
 .sidebar h2{
     color: #ccc;
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+
 .sidebar a{
     color: #fff;
     display: block;
@@ -74,12 +97,18 @@ header{
     transition: 0.5s;
     transition-property:background ;
 }
+
+
 .sidebar a:hover{
     background: #1c1c1c;
 }
+
+
 .sidebar ion-icon{
     padding-right: 10px;
 }
+
+
 label #sidebar_btn{
     z-index: 1;
     position: fixed;
@@ -91,20 +120,30 @@ label #sidebar_btn{
     transition: 0.5s;
     transition-property:color ;
 }
+
+
 label #sidebar_btn:hover{
     color: #464646;
 }
+
+
 #check:checked ~ .sidebar{
     left: -190px;
 }
+
+
 #check:checked ~ .sidebar a span{
     display: none;
 }
+
+
 #check:checked ~ .sidebar a{
     font-size: 20px;
     margin-left: 170px;
     width: 80px;
 }
+
+
 .content{
     background: url(/image/img-2.jpg) no-repeat;
     background-size: cover;
@@ -112,9 +151,13 @@ label #sidebar_btn:hover{
     height: 100vh;
     transition: 0.5s;
 }
+
+
 #check:checked ~ .content{
     margin-left: 60px;
 }
+
+
 #check{
     display: none;
 }
@@ -127,75 +170,119 @@ p {
   margin: 0px;
   padding: 0px;
   list-style: none;
-  font-size: 1.2rem;
   font-family: sans-serif;
 }
 
+
 body {
-  margin-bottom: 100px;
+  height: 100vh;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 100px;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-.header {
-  background-image: linear-gradient(120deg, #1c1c1c, #464646, #1c1c1c);;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.menu {
-  display: flex;
-}
 
 .menu li {
   margin-left: 10px;
 }
+
 
 .menu li a {
   display: block;
   padding: 10px;
 }
 
+
 .box{
-    background-image:linear-gradient(120deg, #1c1c1c, #464646, #1c1c1c);;
+    background-color:#1c1c1c;
     color: #fff;
     border-radius: 20px 40px;
     height: 15vh;
     display: flex;
     justify-content:center;
     align-items: center;
-    transition: all 0.5 ease-out;
+    width: 100px;
+    transition: all 0.5 ease;
  }
+
  
- .box :hover{
-     height: 11vh;
+ .box:hover{
+     background-color: #464646; 
   }
  
  
  .flex {
    display: flex;
    flex-wrap: wrap;
-   max-width: 800px;
+   max-width: 900px;
    margin: 0 auto;
  }
  
+
  .flex > div {
    flex: 1 1 200px;
-   margin: 10px;
+   margin: 20px;
  }
+
+ .main{
+   margin-top: 5%;
+ }
+
+ #mat{
+   background-color: #51b3ec;
+   height: 15vh;
+   width: 200px;
+   transition: all 0.5s ease; 
+   border:#1c1c1c 2px solid;
+   font-size: 1.2rem;
+ }
+
+ #mat:hover{
+   background-color: #ffffff;
+   border:#51b3ec 2px solid;
+   color:#1c1c1c;
+   font-size: 1.5rem;
+ }
+
+ #port{
+    background-color: #bf0000;
+    height: 15vh;
+    width: 200px;
+    font-size: 1.2rem;
+    transition: all 0.5s ease; 
+    border:#1c1c1c 2px solid;
+ }
+
+ #port:hover{
+  background-color: #ffffff;
+  border:#bf0000 2px solid;
+  color:#1c1c1c;
+  font-size: 1.5rem;
+ }
+
+ @media (max-width: 1350px){
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .flex > div {
+    flex: 1  200px;
+    margin: 20px;
+  }
+ }
+
+
+ @media (max-width: 1000px){
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .flex > div {
+    flex: 1 200px;
+    margin: 20px;
+  }
+ }
+ 

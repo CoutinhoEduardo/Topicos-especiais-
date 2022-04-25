@@ -1,5 +1,6 @@
 function logar(){
     alert("cARAALHO")
+    
 }
 
 function portalAluno(){
