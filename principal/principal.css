@@ -180,6 +180,7 @@ p {
 
 body {
   height: 100vh;
+  background: #FFFFFF url("/images/fundo.jpg");
 }
 
 
@@ -219,21 +220,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     max-width: 800px;
     padding: 100px;
-    margin: 0 auto;
-    grid-gap: 20px;
+    margin-left: 200px;
   }
 
-  .grid1 div {
-    border-radius: 4%;
-  }
-  .grid1 div img{
-    border-radius: 4%;
-  }
 
   .ladoConteudo{
-    background-color: #ccc;
-    width: 440px;
-    height: 225px;
+    background-color: rgba(255, 255, 255, 0.29);  
+    width: 704px;
+    height: 360px;
     display: flex;
     
   }
