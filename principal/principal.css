@@ -219,6 +219,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 800px;
+    grid-row-gap: 30px;
     padding: 100px;
     margin-left: 200px;
   }
@@ -228,7 +229,7 @@ body {
     background-color: rgb(219, 219, 219);  
     width: 704px;
     height: 360px;
-    display: flex;
+    align-items: center;
   }
 
   .ladoConteudo h1{
@@ -256,12 +257,8 @@ body {
     font-size: 20px;
     border-radius: 20px 40px;
   }
-  .avisos ul li a {
-    position: absolute;
-    margin-top:60px;
-    justify-content: baseline;
-    align-items: flex-end;
-    color: rgb(39, 42, 59);
+  .avisos  li {
+    padding: 30px 20px 0;
   }
   /* .grid1 > div:nth-child(n + 4) {
     display: grid;
