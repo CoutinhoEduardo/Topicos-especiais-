@@ -229,7 +229,6 @@ body {
     background-color: rgb(219, 219, 219);  
     width: 704px;
     height: 360px;
-    align-items: center;
   }
 
   .ladoConteudo h1{
@@ -239,8 +238,7 @@ body {
   }
   
   .ulConteudo{
-    align-content: center;
-    justify-content:center;
+    padding: 25px;
   }
 
   h3{
@@ -252,13 +250,37 @@ body {
 
   .avisos{
     background-image: linear-gradient(120deg, #46464682, #7171718f, #464646c0);
+    padding: 20px;
     width: 600px;
     height: 150px;
     font-size: 20px;
     border-radius: 20px 40px;
   }
-  .avisos  li {
-    padding: 30px 20px 0;
+  .avisos li  {
+    padding: 10px 10px 0;
+  }
+
+
+
+  .matriculaMain{
+    padding-top:70px ;
+    padding-left:270px;
+  }
+
+  table ,th ,td{
+    border:2px #1c1c1c solid;
+    border-collapse: collapse;
+  }
+  th, td{
+    padding: 5px 10px;
+  }
+  th{
+    background-color: #0047ab;
+    color: #fff;
+  }
+
+  .buttonAtividade{
+    align-items: center;
   }
   /* .grid1 > div:nth-child(n + 4) {
     display: grid;

@@ -1,6 +1,6 @@
 function logar(){
-    alert("cARAALHO")
-    
+    alert("cuccu")
+    location.href="principal/principalAlunos.html"
 }
 
 function portalAluno(){
