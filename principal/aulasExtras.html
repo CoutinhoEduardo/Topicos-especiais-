@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/principal/principal.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -120,10 +121,11 @@
             <img src="../../images/aluno.png" class="image" alt="">
             <h2>Aluno</h2>
         </center>
-        <a href="#"><ion-icon name="desktop-outline"></ion-icon><span>Aulas</span></a>
-        <a href="#"><ion-icon name="calendar-clear-outline"></ion-icon><span>Agenda de Provas</span></a>
-        <a href="#"><ion-icon name="book-outline"></ion-icon><span>Atividades Extras</span></a>
-        <a href="#"><ion-icon name="shield-checkmark-outline"></ion-icon><span>Matrícula</span></a>
+        <a href="/principal/alunos/principalAlunos.html"><ion-icon name="home-outline"></ion-icon><span>Home</span></a>
+        <a href="/principal/aulasExtras.html"><ion-icon name="desktop-outline"></ion-icon><span>Aulas</span></a>
+        <a href="/principal/aulasExtras.html"><ion-icon name="calendar-clear-outline"></ion-icon><span>Agenda de Provas</span></a>
+        <a href="/principal/aulasExtras.html"><ion-icon name="book-outline"></ion-icon><span>Atividades Extras</span></a>
+        <a href="/principal/alunos/matriculaAlunos.html"><ion-icon name="shield-checkmark-outline"></ion-icon><span>Matrícula</span></a>
         <a href="#"><ion-icon name="chatbubble-outline"></ion-icon><span>Chats</span></a>
         <a href="#"><ion-icon name="settings-outline"></ion-icon><span>Configuração</span></a> 
         
@@ -145,7 +147,7 @@
               <!-- Tabela Simples -->
               <article class="elementos" id="hl1">
                   <section class="exemplo">
-                      <p class="sub">Horário das Aulas</p>
+                      <p class="sub">Horário das Aulas: Tarde</p>
                       <table class="horario">
                           <caption>Quadro de Horário</caption>
                           <thead>
@@ -172,7 +174,7 @@
                           </tfoot>
                           <tbody>
                               <tr>
-                                  <th>17:20</th>
+                                  <th>13:30</th>
                                   <td></td>
                                   <td></td>
                                   <td></td>
@@ -181,7 +183,7 @@
                                   <td></td>                            
                               </tr>
                               <tr>
-                                  <th>18:10</th>
+                                  <th>14:20</th>
                                   <td></td>
                                   <td></td>
                                   <td></td>
@@ -190,7 +192,7 @@
                                   <td></td>                            
                               </tr>
                               <tr>
-                                  <th>19:00</th>
+                                  <th>15:10</th>
                                   <td></td>
                                   <td></td>
                                   <td></td>
@@ -199,16 +201,16 @@
                                   <td></td>                            
                               </tr>
                               <tr>
-                                  <th>19:50</th>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>                            
+                                  <th>16:00</th>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>                           
                               </tr>
                               <tr>
-                                  <th>20:40</th>
+                                  <th>16:20</th>
                                   <td>Intervalo</td>
                                   <td>Intervalo</td>
                                   <td>Intervalo</td>
@@ -216,8 +218,118 @@
                                   <td>Intervalo</td>
                                   <td>Intervalo</td>                            
                               </tr>
+                            
+                               <tr>
+                                  <th>17:10</th>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>                            
+                              </tr>
+                               <tr>
+                                  <th>18:00</th>
+                                  <td>Termino</td>
+                                  <td>Termino</td>
+                                  <td>Termino</td>
+                                  <td>Termino</td>
+                                  <td>Termino</td>
+                                  <td>Termino</td>                            
+                              </tr>
+                          </tbody>
+                      </table>
+                  </section>
+              </article>
+          </section>        
+          </nav>
+
+
+          <br>
+
+
+          <nav>
+            <h1 style="font-size: 40px;">
+              Conteúdo:
+            </h1>
+            <section id="posts">
+              <!-- Tabela Simples -->
+              <article class="elementos" id="hl1">
+                  <section class="exemplo">
+                      <p class="sub">Horário das Aulas: Manhã</p>
+                      <table class="horario">
+                          <caption>Quadro de Horário</caption>
+                          <thead>
                               <tr>
-                                  <th>20:50</th>
+                                  <th>Horário</th>
+                                  <th>Segunda</th>
+                                  <th>Terça</th>
+                                  <th>Quarta</th>
+                                  <th>Quita</th>
+                                  <th>Sexta</th>
+                                  <th>Sábado</th>
+                              </tr>
+                          </thead>
+                          <foot>
+                              <tr>
+                                  <th>Horário</th>
+                                  <th>Segunda</th>
+                                  <th>Terça</th>
+                                  <th>Quarta</th>
+                                  <th>Quita</th>
+                                  <th>Sexta</th>
+                                  <th>Sábado</th>
+                              </tr>
+                          </foot>
+                          <tbody>
+                              <tr>
+                                  <th>7:30</th>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>                            
+                              </tr>
+                              <tr>
+                                  <th>8:20</th>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>                            
+                              </tr>
+                              <tr>
+                                  <th>09:10</th>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>                            
+                              </tr>
+                              <tr>
+                                  <th>10:00</th>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>                           
+                              </tr>
+                              <tr>
+                                  <th>10:20</th>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>
+                                  <td>Intervalo</td>                            
+                              </tr>
+                            
+                               <tr>
+                                  <th>11:10</th>
                                   <td></td>
                                   <td></td>
                                   <td></td>
@@ -226,16 +338,7 @@
                                   <td></td>                            
                               </tr>
                                <tr>
-                                  <th>21:40</th>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>
-                                  <td></td>                            
-                              </tr>
-                               <tr>
-                                  <th>22:30</th>
+                                  <th>12:00</th>
                                   <td>Termino</td>
                                   <td>Termino</td>
                                   <td>Termino</td>
@@ -251,7 +354,11 @@
           </nav>
         </div>
 
+        
+
       </section>
+
+      
 
     </body>
     

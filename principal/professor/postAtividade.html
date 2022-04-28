@@ -49,7 +49,7 @@
         <a href="../professor/principalProfessor.html"><ion-icon name="home-outline"></ion-icon><span>Home</span></a>
         <a href="#"><ion-icon name="desktop-outline"></ion-icon><span>Aulas</span></a>
         <a href="#"><ion-icon name="calendar-clear-outline"></ion-icon><span>Agenda de Provas</span></a>
-        <a href="#"><ion-icon name="book-outline"></ion-icon><span>Atividades Extras</span></a>
+        <a href="postAtividade.html"><ion-icon name="book-outline"></ion-icon><span>Adicionar Atividade</span></a>
         <a href="matriculasProfessor.html"><ion-icon name="shield-checkmark-outline"></ion-icon><span>Matrículas</span></a>
         <a href="#"><ion-icon name="chatbubble-outline"></ion-icon><span>Chats</span></a>
         <a href="#"><ion-icon name="settings-outline"></ion-icon><span>Configuração</span></a> 
@@ -62,8 +62,38 @@
       <br>
       <br>
         <div class="postAtividade">
-            <button type="buttonAtividade" class="button">Postar Atividade</button>
+            <button type="button" class="buttonAtividade">Postar Atividade</button>
+
+
+            <div class="matriculaMain">
+              <table>
+                  <tr>
+                      <th><select name="select" class="selectAtv"><option>Selecione o ano</option>
+                        <option>Primeiro Ano</option>
+                        <option>Segundo Ano</option>
+                        <option>Terceiro Ano</option>
+                        <option>Quarto Ano</option>
+                        <option>Quinto Ano</option>
+                        <option>Sexto Ano</option>
+                        <option>Sétimo Ano</option>
+                        <option>Oitavo Ano</option>
+                        <option>Nono Ano</option></select></th>
+                        <th><select name="select" class="selectAtv"><option>Selecione o turno</option>
+                          <option>Vespertino</option>
+                          <option>Matutino</option>
+                          
+                  </tr>    
+                  <button type="button" class="adcArq">Adicionar Arquivo</button>         
+              </table>
+              <a>Descrição da Atividade:</a>
+              <input style="border: none;"class="descricaoAtv">
+              
+
+          </div>
+
         </div>
+
+
     </body> 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
